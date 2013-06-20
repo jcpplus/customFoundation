@@ -347,131 +347,9 @@ function hideURLbar(){
 		});
 		
 		//mask
-		$('#expirationDate').mask('99/9999');
-		$('#phone').mask('(999) 999-9999');
-		$('#dueDate').mask('99/99/9999');
 		
 		/* Form validate */
-		$('#userLoginForm').isHappy({
-			fields:{
-				'#email':	{test:happy.email},
-				'#password':{ test:happy.passwordlegacysignin}
-			}
-		});
-		$('#registerForm').isHappy({
-			fields:{
-				'#uemail'	: { test: happy.email},
-				'#upassword': { test: happy.password},
-				'#upasswordConfirm':{
-					required:	['sometimes', 'Your two passwords do not match, please try again.'],
-					test: happy.equal,
-					arg:function () {
-						return [$('#upassword').val(), 'Your two passwords do not match, please try again.'];
-					}
-				},
-				'#zipCode':{ test:happy.zipCode }
-			}
-		});
-		$('#editAddressForm').isHappy({
-			fields:{
-				'#name':{test:happy.addressName},
-				'#zipCode':{test:happy.zipCode},
-				'#fieldState': { test: happy.USState},
-				'#phone':{test:happy.USPhone}
-			}
-		});
 		
-		$('#forgetPasswordForm').isHappy({
-			fields:{
-				'#email':{test:happy.email}
-			}
-		});
-		$('#resetPasswordForm').isHappy({
-			fields:{
-				'#password' : 	{test:happy.passwordlegacysignin},
-				'#newPassword' :{test:happy.password},
-				'#newPasswordConfirm':{
-					required:	['sometimes', 'Your two passwords do not match, please try again.'],
-					test:happy.equal,
-					arg:function () {
-						return [$('#newPassword').val(), 'Your two passwords do not match, please try again.'];
-					}
-				}
-			}
-		});
-		$('#resetForgotPasswordForm').isHappy({
-			fields:{
-				'#newPassword' : 	{test:happy.password},
-				'#verifyNewPassword':{
-					required:	['sometimes', 'Your two passwords do not match, please try again.'],
-					test:happy.equal,
-					arg:function () {
-						return [$('#newPassword').val(), 'Your two passwords do not match, please try again.'];
-					}
-				}
-			}
-		});
-		$('#promotionCodeForm').isHappy({
-			fields:{
-				'#promotionCode':{test:happy.promotionCode}
-			}
-		});
-		$('#addAdressForm').isHappy({
-			fields:{
-				'#name':{test:happy.addressName},
-				'#fromCity':{test: happy.name, arg: 'Please enter only letters for City.'},
-				'#zipCode':	{test: happy.zipCode},
-				'#fieldState': { test: happy.USState},
-				'#phone':	{test: happy.USPhone}
-			}
-		});
-		
-		$('#contactInfoForm').isHappy({
-			fields: {
-				'#phone':	{test: happy.USPhone},
-				'#lastName':{test: happy.name},
-				'#email': {test: happy.email}
-			}
-		});
-		
-		$('#postZipCodeForm').isHappy({
-			fields: {
-				'#zipCode':{test: happy.zipCode}
-			}
-		});
-		$('#searchForm').isHappy();
-		
-		//baby registry
-		$("#babyInfoForm").isHappy({
-			fields:{
-				'#dueDate':$("#dueDate").attr("readonly")=="readonly"?{}:$("#dueDate").attr("hasModifiedExpectedDate")=="false"?{test:happy.date}:{test:happy.afterNowDate}
-			}
-		});
-		
-		$("#aboutYouForm").isHappy({
-			fields:{
-				'#name':{test:happy.addressName},
-				'#city':{test: happy.name, arg: 'Please enter only letters for City.'},
-				'#zipCode':{test:happy.zipCode},
-				'#state': { test: happy.USState},
-				'#phone':{test:happy.USPhone}
-			}
-		});
-		$("#createNewAddress").isHappy({
-			fields:{
-				'#name':{test:happy.addressName},
-				'#city':{test: happy.name, arg: 'Please enter only letters for City.'},
-				'#zipCode':{test:happy.zipCode},
-				'#state': { test: happy.USState},
-				'#phone':{test:happy.USPhone}
-			}
-		});
-		
-		$("#creditCardForm").isHappy({
-			fields:{
-				'#securityCode'	: { test:happy.securityCode}
-			}
-		});
 		
 		;(function($){
 			var $showMoreBtn=$("#show-more-btn"),showMore={},doDataKey="doing",$container=$($showMoreBtn.data("container")),loadInfo=$showMoreBtn.data("load-info");
@@ -524,40 +402,7 @@ function hideURLbar(){
 	
 	
 	//QS-39444 CO18196:[mobile-web] Amazon fraud check pixel widget
-	var userLoginForm = $('#userLoginForm');
-	var registerForm = $('#registerForm');
-	if((userLoginForm.length != 0) || (registerForm.length != 0)){
-		var script = document.createElement("script");
-		script.id = 'fwcim-script';
-		script.src = 'https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/login/fwcim.js';
-		var $script = $(script);
-		$script.bind('load', function(){
-			if(userLoginForm.length != 0){
-				fwcim.profile('userLoginForm');					
-			}else{
-				fwcim.profile('registerForm');
-			}
-		});
-		$("head").append(script);
-	}
 	
-	updateVisitorInfo();
-	
-	$(".dropDown").dropDownSelect();
-	
-	var babyInfoForm=$("#babyInfoForm");
-	var multiplesBabyInfo=babyInfoForm.find('#multiplesBabyInfo');
-	if($('input[name=babyInfo][checked]').val()=="multiples"){
-		multiplesBabyInfo.show();
-	};
-	if(multiplesBabyInfo.length){
-		babyInfoForm.find('input[type=radio]').bind("change",function(){
-			multiplesBabyInfo.hide();
-			var $multiples=$("#multiples");
-			if($multiples.val()=="multiples"&&$multiples.parent().parent().hasClass("checked"))multiplesBabyInfo.show();
-		});
-		multiplesBabyInfo.find(".qtySetting").numBox();
-	}
 	
 })(Zepto);	
 
