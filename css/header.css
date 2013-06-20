@@ -1,0 +1,238 @@
+/* -- reset -- */
+body, h1, h2, h3, h4, h5, p, ul, ol, dl, dd, form, fieldset, input, select, textarea {
+	margin:0;}
+button, fieldset, legend, select, ul, ol {
+	padding:0;}
+ul {
+	list-style:none;}
+a img, fieldset, th, td {
+	border:none;}
+a {text-decoration:none;color:#666666;}
+em {
+	font-style:normal;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;}
+h1{
+	font-size:18px;}
+h2{
+	font-size:16px;}
+h3{
+	font-size:14px;}
+h4, h5{
+	font-size:12px;}
+h1 span a{
+	color:#0098CE;}
+input[type="submit"], input[type="reset"], input[type="button"], button{-webkit-appearance:none;}
+.cl{
+	clear:both;}
+.cf:after{
+	content:".";
+	display:block;
+	height:0;
+	overflow:hidden;
+	clear:both;}
+.block{
+	padding:10px 10px 0;}
+.nocolor{
+	color:#666 !important;}
+.displayNone{display:none}
+.left{float:left;}
+.right{float:right;}
+
+/* -- header --*/
+#header{
+    background-color:#2E97D4;
+}
+#logo a{
+    color:#fff;
+}
+.main-nav a, .main-nav span {border-left:1px solid #2680B4;color:#FFF;}
+.main-nav span:hover,
+.main-nav a:hover,
+.main-nav span.on{
+    background-color:#E6EBEE;
+    color:#616161;
+}
+/* -- header --*/
+#header{
+	position:relative;
+	font-size:14px;
+	font-weight:bold;}
+#logo{
+	width:40%;}
+#logo a{
+	text-align:center;
+	line-height:58px;
+	display:block;
+	height:58px;
+	overflow:hidden;
+	font-size:1.5em;}
+.full-logo{
+	width:auto !important;
+	display:block;}
+.main-nav{
+	position:absolute;
+	top:0;
+	right:0;
+	width:60%;
+	text-align:center;}
+.main-nav a, .main-nav span{
+	float:left;
+	width:33%;
+	height:58px;
+	line-height:58px;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;}
+.main-nav a{
+	width:34%;}
+.main-nav span{
+	cursor:pointer;}
+
+.searchButton {
+	position:absolute;
+	top:0;
+	margin:0 auto;
+	display:block;
+	text-align:center;
+	width:100%;
+	font-size:1.8em;
+	color:white;}
+.iconSearch{
+	line-height:57px!important;
+	font-size:1.7em;}
+.iconSearch:hover, .iconSearch.on{
+	background-position:50% -27px;}
+.extendBlocks .extendBlock{
+	display:none;}
+.extendBlocks .on{
+	display:block;}
+
+/*diapers*/
+.main-nav a, .main-nav span {
+border-left: 1px solid #2680B4;
+color: #FFF;
+}
+#header .extendBlocks {
+background-color: #E6EBEE;
+}
+.main-nav span:hover, .main-nav a:hover, .main-nav span.on {
+background-color: #E6EBEE;
+color: #616161;
+}
+/* all*/
+.main-nav a, .main-nav span {
+float: left;
+width: 33%;
+height: 58px;
+line-height: 58px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.main-nav span {
+cursor: pointer;
+}
+.main-nav a {
+width: 34%;
+}
+/* CSS animate */
+@font-face {
+	font-family:'quidsiiconfont';
+	src:url('../demo_re/fonts/quidsiiconfont.eot?version=20130607-0527');
+	src:url('../demo_re/fonts/quidsiiconfont.eot?version=20130607-0527#iefix') format('embedded-opentype'),
+		url('../demo_re/fonts/quidsiiconfont.ttf?version=20130607-0527') format('truetype'),
+		url('../demo_re/fonts/quidsiiconfont.woff?version=20130607-0527') format('woff'),
+		url('../demo_re/fonts/quidsiiconfont.svg?version=20130607-0527#quidsiiconfont') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family:'quidsiiconfont';
+	content:attr(data-icon);
+	speak:none;
+	font-weight:normal;
+	-webkit-font-smoothing:antialiased;
+}
+/* Use the following CSS code if you want to have a class per icon */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family:'quidsiiconfont';
+	font-style:normal;
+	speak:none;
+	font-weight:normal;
+	-webkit-font-smoothing:antialiased;
+}
+.iconMenu{
+	font-size:1.8em;
+	position:relative;
+}
+.iconCart {
+	font-size:1.4em;
+	position:relative;
+}
+.iconCart b {
+	font-size:.8em;
+	position:absolute;
+	top:-15px;
+	text-align:center;
+	display:block;
+	width:100%;
+	float:left;
+	font-family:'Helvetica Neue', Arial, 'sans serif';
+}
+.iconMenu:before{
+	content:"\e007";
+}
+.iconSearch:before{
+	content:"\e002";
+}
+.iconCart:before{
+	content:"\e001";
+}
+.arrowRIcon:before{
+	content:"\e00a";
+}
+.icon-truck:before {
+	content:"\e005";
+}
+.icon-ecoupon:before {
+	content:"\e006";
+}
+.icon-star:before {
+	content:"\e003";
+}
+.transport span.splitLine:before{
+	content:"\e013";
+}
+.icon-carrot:before {
+	font-size:1.5em;
+	content:"\e004";
+}
+.icon-moreOption:before{
+	content:"\e012";
+}
+.fulfilled:before{
+	content:"\e017";
+}
+.loadIcon:before{
+	content:"\e00c";
+}
+.switchViewModel span:after,.icon-plp-rows1:before {
+	font-family:'quidsiiconfont';
+	font-style:normal;
+	speak:none;
+	font-weight:normal;
+	-webkit-font-smoothing:antialiased;
+	content:"\e008";
+}
+.switchViewModel.viewWithGrid span:after,.icon-grid1:before {
+	font-family:'quidsiiconfont';
+	font-style:normal;
+	speak:none;
+	font-weight:normal;
+	-webkit-font-smoothing:antialiased;
+	content:"\e009";
+}
