@@ -1,124 +1,889 @@
-<!DOCTYPE html>
-<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Foundation 4</title>
-
-  
-  <link rel="stylesheet" href="css/foundation.css" />
-  
-
-  <script src="js/vendor/custom.modernizr.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>demo2-Foundation4 </title>
+	<meta name="description" content="Free 1-2 day shipping both ways, great prices &amp; 365-day return policy. Shop Formula at Diapers.com - Best 24/7 customer service.">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+	<meta name="apple-mobile-web-app-title" content="Diapers">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="telephone=no" name="format-detection">
+	<link rel="shortcut icon" href="http://c4.diapers.com/mstatic/favicon/diapers.ico?version=20130607-0527">
+	<link rel="apple-touch-icon-precomposed" href="http://c1.diapers.com/mstatic/apple-touch-icon.png?version=20130607-0527">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/app2.css">
+	<script src="js/vendor/custom.modernizr.js"></script>
 
 </head>
 <body>
-
-	<div class="row">
-		<div class="large-12 columns">
-			<h2>Welcome to Foundation</h2>
-			<p>This is version 4.2.2.</p>
-			<hr />
+	<header id="header">
+		<h1 id="logo">
+			<a href="http://www.diapers.com/" class="iconLogo" title="diapers">
+				<span data-icon=""></span>
+			</a>
+		</h1>
+		<div id="main-nav" class="main-nav">
+			<span data-showtarget="#userNavi" data-icon="" title="Cart" class="iconMenu"></span>
+			<span data-showtarget="#searchForm" data-icon="" class="iconSearch "></span>
+			<a href="http://www.diapers.com/shoppingcart" data-icon="" data-visitor-url="/visitor-info" title="Cart" class="iconCart"> <b>0</b>
+			</a>
 		</div>
-	</div>
+	</header>
+	<nav class="top-bar" data-options="is_hover:false">
+		<ul class="title-area">
+			<!-- Title Area -->
+			<li class="name">
+				<h1>
+					<a href="#">Formula(805)</a>
+				</h1>
+			</li>
+			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+			<li class="toggle-topbar menu-icon">
+				<a href="#">
+					<span>Menu</span>
+				</a>
+			</li>
+		</ul>
 
-	<div class="row">
-		<div class="large-8 columns">
-			<h3>The Grid</h3>
+		<section class="top-bar-section" >
+			<!-- Left Nav Section -->
+			<ul class="left">
+				<li class="divider"></li>
 
-			<!-- Grid Example -->
-			<div class="row">
-				<div class="large-12 columns">
-					<div class="panel">
-						<p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-				<div class="large-6 columns">
-					<div class="panel">
-						<p>Six columns</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-				<div class="large-4 columns">
-					<div class="panel">
-						<p>Four columns</p>
-					</div>
-				</div>
-			</div>
-
-			<h3>Buttons</h3>
-
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
-        </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-		</div>
-
-		<div class="large-4 columns">
-			<h4>Getting Started</h4>
-			<p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-			<h4>Other Resources</h4>
-			<p>Once you've exhausted the fun in this document, you should check out:</p>
-			<ul class="disc">
-				<li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-				<li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-				<li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+				<li class="has-dropdown">
+					<a href="#">Sort</a>
+					<ul class="dropdown">
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Relevance">Relevance</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Highest+Rating">Highest Rating</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Name%3A+A+to+Z">Name: A to Z</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Name%3A+Z+to+A">Name: Z to A</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Price%3A+Low+to+High">Price: Low to High</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Price%3A+High+to+Low">Price: High to Low</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Best+Selling">Best Selling</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=New+to+Diapers.com">New to Diapers.com</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Popular+Registry+Items">Popular Registry Items</a>
+						</li>
+					</ul>
+				</li>
+				<li class="divider"></li>
+				<li class="has-dropdown">
+					<a href="#">Filter</a>
+					<ul class="dropdown">
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Relevance">Relevance</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Highest+Rating">Highest Rating</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Name%3A+A+to+Z">Name: A to Z</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Name%3A+Z+to+A">Name: Z to A</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Price%3A+Low+to+High">Price: Low to High</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Price%3A+High+to+Low">Price: High to Low</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Best+Selling">Best Selling</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=New+to+Diapers.com">New to Diapers.com</a>
+						</li>
+						<li>
+							<a href="http://www.diapers.com/subcat=Formula-158/Type=Milk-Based+Formula?SortExpression=Popular+Registry+Items">Popular Registry Items</a>
+						</li>
+					</ul>
+				</li>
 			</ul>
+		</section>
+	</nav>
+	<section>
+		<!-- no large,no small,no foundation gird -->
+		<div class="productBox">
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/earths-best-dairy-infant-powder-formula-232-oz-6295" class="cover">
+						<i></i>
+						<img src="./demo_re/eb-023_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/earths-best-dairy-infant-powder-formula-232-oz-6295" class="infos">
+						<span class="titleInfo">
+							<strong>Earth's Best Dairy</strong>
+							<br>Infant Powder Formula - 23.2 oz</span>
+						<span class="normalPrice">$27.99</span>
+						-
+						<span class="normalPrice">$108.99</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-sensitive-powder-formula-34-oz-114410" class="cover">
+						<i></i>
+						<img src="./demo_re/co-021_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/earths-best-dairy-infant-powder-formula-232-oz-6295" class="infos">
+						<span class="titleInfo">
+							<strong>Earth's Best Dairy</strong>
+							<br>Infant Powder Formula - 23.2 oz</span>
+						<span class="normalPrice">$27.99</span>
+						-
+						<span class="normalPrice">$108.99</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+			</div>
+		</div>
+				
+				
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/earths-best-sensitivity-infant-powder-formula-232-oz-803530" class="cover">
+						<i></i>
+						<img src="./demo_re/eb-182_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/earths-best-sensitivity-infant-powder-formula-232-oz-803530" class="infos">
+						<span class="titleInfo">
+							<strong>Earth's Best Sensitivity</strong>
+							<br>Infant Powder Formula - 23.2 oz</span>
+						<span class="normalPrice">$30.09</span>
+						-
+						<span class="normalPrice">$99.99</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/babys-only-dairy-toddler-formula-127-oz-7348" class="cover">
+						<i></i>
+						<img src="./demo_re/no-003_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/babys-only-dairy-toddler-formula-127-oz-7348" class="infos">
+						<span class="titleInfo">
+							<strong>Baby's Only</strong>
+							<br>Dairy Toddler Formula - 12.7 oz - 6 pk</span>
+						<span class="normalPrice">$12.09</span>
+						-
+						<span class="normalPrice">$66.39</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/gerber-good-start-gentle-powder-232-oz-101074" class="cover">
+						<i></i>
+						<img src="./demo_re/ns-210_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/gerber-good-start-gentle-powder-232-oz-101074" class="infos">
+						<span class="titleInfo">
+							<strong>Gerber Good Start Gentle</strong>
+							<br>Powder - 23.2 oz</span>
+						<span class="salePrice">$26.99</span>
+						-
+						<span class="salePrice">$99.59</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $5 when you spend $25</b>
+								<br>
+								Use code
+								<span>GERBERBDAY</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-advance-newborn-bottles-2-oz-48-pk-5628" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-026_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-advance-newborn-bottles-2-oz-48-pk-5628" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Advance</strong>
+							<br>Newborn Bottles - 2 oz - 48 pk</span>
+						<span class="salePrice">$42.49</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-gentlease-powder-formula-refill-332-oz-72280" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-078_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-gentlease-powder-formula-refill-332-oz-72280" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Gentlease</strong>
+							<br>Powder Formula Refill - 33.2 oz</span>
+						<span class="salePrice">$40.79</span>
+						-
+						<span class="salePrice">$152.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-go-grow-milk-powder-formula-22-oz-7587" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-054_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-go-grow-milk-powder-formula-22-oz-7587" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Go and Grow</strong>
+							<br>Powder Formula - 22 oz</span>
+						<span class="salePrice">$24.89</span>
+						-
+						<span class="salePrice">$145.49</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-sensitive-on-the-go-nipple-ready-bottles-8-oz-24-pk-100206" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-078c_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-sensitive-on-the-go-nipple-ready-bottles-8-oz-24-pk-100206" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Sensitive</strong>
+							<br>On-the-go Nipple Ready Bottles - 8 oz - 24 pk</span>
+						<span class="salePrice">$47.09</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-infant-ready-to-feed-formula-8-oz-204250" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-098_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-infant-ready-to-feed-formula-8-oz-204250" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Infant</strong>
+							<br>Ready to Feed Formula - 8 oz</span>
+						<span class="salePrice">$11.99</span>
+						-
+						<span class="salePrice">$43.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-infant-powder-formula-234-oz-72258" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-075_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-infant-powder-formula-234-oz-72258" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Infant</strong>
+							<br>Powder Formula - 23.4 oz</span>
+						<span class="salePrice">$27.99</span>
+						-
+						<span class="salePrice">$159.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-organic-powder-formula-232-oz-7581" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-051_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-organic-powder-formula-232-oz-7581" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Organic</strong>
+							<br>Powder Formula - 23.2 oz</span>
+						<span class="salePrice">$29.19</span>
+						-
+						<span class="salePrice">$165.89</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-formula-232-oz-7579" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-049_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-formula-232-oz-7579" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Advance</strong>
+							<br>Powder Formula Formula - 23.2 oz</span>
+						<span class="salePrice">$27.99</span>
+						-
+						<span class="salePrice">$163.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-newborn-formula-nursettes-2-oz-24-pk-217027" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-099_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-newborn-formula-nursettes-2-oz-24-pk-217027" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Newborn</strong>
+							<br>Formula Nursettes - 2 oz - 24 pk</span>
+						<span class="salePrice">$37.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-gentlease-ready-to-feed-formula-8-oz-589298" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-141_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-gentlease-ready-to-feed-formula-8-oz-589298" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Gentlease</strong>
+							<br>Ready to Feed Formula - 8 oz</span>
+						<span class="salePrice">$11.99</span>
+						-
+						<span class="salePrice">$42.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/gerber-good-start-gentle-ready-to-feed-845-oz-24-pk-169591" class="cover">
+						<i></i>
+						<img src="./demo_re/ns-349_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/gerber-good-start-gentle-ready-to-feed-845-oz-24-pk-169591" class="infos">
+						<span class="titleInfo">
+							<strong>Gerber Good Start Gentle</strong>
+							<br>Ready to Feed - 8.45 oz - 24 pk</span>
+						<span class="normalPrice">$43.99</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-gentlease-powder-formula-222-oz-72278" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-077_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-gentlease-powder-formula-222-oz-72278" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Gentlease</strong>
+							<br>Powder Formula - 22.2 oz</span>
+						<span class="salePrice">$27.99</span>
+						-
+						<span class="salePrice">$109.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfamil-infant-powder-formula-packets-062-oz-16-ct-84265" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-084_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfamil-infant-powder-formula-packets-062-oz-16-ct-84265" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Infant</strong>
+							<br>Powder Formula Packets - 0.62 oz</span>
+						<span class="salePrice">$12.99</span>
+						-
+						<span class="salePrice">$74.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/babys-only-dairy-toddler-formula-with-dha-ara-127-oz-498607" class="cover">
+						<i></i>
+						<img src="./demo_re/no-009_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/babys-only-dairy-toddler-formula-with-dha-ara-127-oz-498607" class="infos">
+						<span class="titleInfo">
+							<strong>Baby's Only</strong>
+							<br>Toddler Formula with DHA &amp; ARA - 12.7 oz</span>
+						<span class="normalPrice">$16.99</span>
+						-
+						<span class="normalPrice">$85.79</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-organic-ready-to-feed-formula-32-oz-6-pk-5630" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-022c_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-organic-ready-to-feed-formula-32-oz-6-pk-5630" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Organic</strong>
+							<br>Ready to Feed Formula - 32 oz - 6 pk</span>
+						<span class="salePrice">$46.79</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-sticks-16-ct-4848" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-031_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-sticks-16-ct-4848" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Advance</strong>
+							<br>Powder Formula Sticks - 16 ct</span>
+						<span class="salePrice">$12.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfagrow-older-toddler-powder-formula-natural-milk-24-oz-576600" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-140_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfagrow-older-toddler-powder-formula-natural-milk-24-oz-576600" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Enfagrow Toddler</strong>
+							<br>Powder Formula Natural Milk - 24 oz</span>
+						<span class="salePrice">$21.99</span>
+						-
+						<span class="salePrice">$80.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/vermont-organics-powder-232-oz-224349" class="cover">
+						<i></i>
+						<img src="./demo_re/br-018_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/vermont-organics-powder-232-oz-224349" class="infos">
+						<span class="titleInfo">
+							<strong>Vermont Organics</strong>
+							<br>Powder - 23.2 oz</span>
+						<span class="normalPrice">$26.19</span>
+						-
+						<span class="normalPrice">$100.69</span>
+						<span class="tips"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/gerber-good-start-protect-powder-232-oz-101078" class="cover">
+						<i></i>
+						<img src="./demo_re/ns-211_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/gerber-good-start-protect-powder-232-oz-101078" class="infos">
+						<span class="titleInfo">
+							<strong>Gerber Good Start Protect</strong>
+							<br>Powder - 23.2 oz - 4 pk</span>
+						<span class="salePrice">$26.19</span>
+						-
+						<span class="salePrice">$92.59</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $5 when you spend $25</b>
+								<br>
+								Use code
+								<span>GERBERBDAY</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-134_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Enfagrow Toddler</strong>
+							<br>Powder Formula Refill - 30 oz</span>
+						<span class="salePrice">$23.99</span>
+						-
+						<span class="salePrice">$93.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-124-oz-16514" class="cover">
+						<i></i>
+						<img src="./demo_re/ab-065_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/similac-advance-powder-formula-124-oz-16514" class="infos">
+						<span class="titleInfo">
+							<strong>Similac Advance</strong>
+							<br>Powder Formula - 12.4 oz</span>
+						<span class="salePrice">$16.99</span>
+						-
+						<span class="salePrice">$97.69</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>25% off SimplySmart bottles</b>
+								<br>
+								Use code
+								<span>BOTTLE25</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-134_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Enfagrow Toddler</strong>
+							<br>Powder Formula Refill - 30 oz</span>
+						<span class="salePrice">$23.99</span>
+						-
+						<span class="salePrice">$93.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+			<div class="productsItem  columns">
+				<div class="product-list">
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="cover">
+						<i></i>
+						<img src="./demo_re/mj-134_med2a.jpg"></a>
+					<a href="http://www.diapers.com/p/enfagrow-toddler-powder-formula-refill-30-oz-415123" class="infos">
+						<span class="titleInfo">
+							<strong>Enfamil Enfagrow Toddler</strong>
+							<br>Powder Formula Refill - 30 oz</span>
+						<span class="salePrice">$23.99</span>
+						-
+						<span class="salePrice">$93.99</span>
+						<span class="tips">
+							<p class="showEcouponFlag">
+								<b>Save $10 when you spend $75.</b>
+								<br>
+								Use code
+								<span>ENFAMIL510</span>
+							</p>
+						</span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star icon-star-filled"></span>
+						<span data-icon="" class="icon-star "></span>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div class="pageNavi" style="position: relative;">
+		<input id="show-more-btn" class="large button expand" type="button" value="Show More" data-url="" data-index="3" data-total="9" data-container="#product-list" data-load-info="Loading more products..." data-doing="false">
+		<div class="loadingBox" style="width: 100%; height: 100%; top: 0px; left: 0px; position: absolute; background-color: rgb(255, 255, 255); display: none;">
+			<div class="loadWrapBox" style="margin-left: -79px; margin-top: -29px;">
+				<span data-icon="" class="loadIcon"></span>
+				<p>Loading more products...</p>
+			</div>
 		</div>
 	</div>
-
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
-  <script src="js/foundation.min.js"></script>
-  <!--
-  
-  <script src="js/foundation/foundation.js"></script>
-  
-  <script src="js/foundation/foundation.interchange.js"></script>
-  
-  <script src="js/foundation/foundation.placeholder.js"></script>
-  
-  <script src="js/foundation/foundation.forms.js"></script>
-  
-  <script src="js/foundation/foundation.alerts.js"></script>
-  
-  -->
-  
-  <script>
-    $(document).foundation();
-  </script>
+	<footer>
+		<div class="appLink"></div>
+		<p class="asideLinks">
+			<a href="http://www.diapers.com/aboutus/contactus">Contact Us</a>
+		</p>
+		<p>
+			View:
+			<span class="current">Mobile</span>
+			/
+			<a href="javascript:" id="toStandardSite">Standard</a>
+		</p>
+	</footer>
+	<script src="js/vendor/jQuery.js"></script>
+	<script src="js/vendor/zepto.js"></script>
+	<script src="js/foundation.min.js"></script>
+	<script src="js/foundation/foundation.topbar.js"></script>
+	<script>
+	 // Check for Zepto support, load jQuery if necessary
+	document.write('<script src=js/vendor/'+ ('__proto__' in {} ? 'zepto' : 'jquery')+ '.js><\/script>');
+	$(document)
+	.foundation()
+	;
+    </script>
 </body>
 </html>
