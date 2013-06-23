@@ -61,7 +61,7 @@ color: #219ACB;
 @media only screen {
 	body{font:12px/1.5 'Helvetica Neue', Arial, 'sans serif';}
   .productsItem{
-  min-height:300px;
+  min-height:337px;
   }
   [class*="column"] + [class*="column"]:last-child {
   float: left;
