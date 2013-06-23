@@ -106,10 +106,6 @@ color: #219ACB;
   [class*="column"] + [class*="column"]:last-child {
     float: left;
   } 
-}
-
-@media only screen and (min-width: 769px) {
-  
 
   /**************/
 .top-bar {
@@ -223,10 +219,10 @@ color: #219ACB;
       right: 0; }
       .top-bar-section ul.right li .dropdown li .dropdown {
         right: 100%; } 
-
-
-
   /*****************/
+}
+
+@media only screen and (min-width: 769px) {
   .productBox{
     margin-left: 2.913em;
     padding: 1px 0 0 0;
